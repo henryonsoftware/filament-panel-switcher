@@ -5,7 +5,7 @@
 @endphp
 
 @if (! empty($panels) && $activePanel)
-    <div class="fi-panel-switcher-mobile lg:hidden me-1">
+    <div class="fi-panel-switcher-mobile">
         <x-filament::dropdown placement="bottom-start" teleport>
             <x-slot name="trigger">
                 <button

@@ -12,7 +12,7 @@
  */
 
 .fi-panel-switcher {
-    @apply absolute top-0 bottom-0 flex items-center;
+    @apply absolute top-0 bottom-0 hidden lg:flex items-center gap-3 h-full;
     inset-inline-start: var(--sidebar-width);
 }
 
@@ -25,6 +25,10 @@
 .fi-panel-switcher-item[aria-current="page"] {
     background-color: var(--switcher-accent);
     color: var(--switcher-accent-foreground);
+}
+
+.fi-panel-switcher-mobile {
+    @apply lg:hidden;
 }
 
 .fi-panel-switcher-mobile-trigger {

@@ -1,7 +1,7 @@
 @props(['panels' => []])
 
 @if (! empty($panels))
-    <nav aria-label="Panel switcher" class="fi-panel-switcher hidden lg:flex items-center gap-3 h-full">
+    <nav aria-label="Panel switcher" class="fi-panel-switcher">
         @foreach ($panels as $panel)
             <a href="{{ $panel['url'] }}" class="fi-panel-switcher-item"
                 @if ($panel['is_active']) aria-current="page" @endif
