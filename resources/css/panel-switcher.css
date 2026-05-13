@@ -2,11 +2,10 @@
  * Panel Switcher styles.
  *
  * This file uses Tailwind CSS @apply directives and CSS custom variables.
- * Define --switcher-sidebar-width, --switcher-muted-foreground, --switcher-accent, and --switcher-accent-foreground in your
+ * Define --switcher-muted-foreground, --switcher-accent, and --switcher-accent-foreground in your
  * Filament theme CSS, then @import or include this file there.
  *
  * Example CSS variable defaults:
- *   --switcher-sidebar-width: 16rem !important
  *   --switcher-muted-foreground: oklch(0.552 0.016 285.938);
  *   --switcher-accent: oklch(0.967 0.001 286.375);
  *   --switcher-accent-foreground: oklch(0.21 0.006 285.885);
@@ -14,7 +13,7 @@
 
 .fi-panel-switcher {
     @apply absolute top-0 bottom-0 flex items-center;
-    inset-inline-start: var(--switcher-sidebar-width);
+    inset-inline-start: var(--sidebar-width);
 }
 
 .fi-panel-switcher-item {
