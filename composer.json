@@ -1,0 +1,25 @@
+{
+    "name": "henryonsoftware/filament-panel-switcher",
+    "description": "A Filament plugin to switch between panels in the topbar.",
+    "keywords": ["laravel", "filament", "panel-switcher"],
+    "license": "MIT",
+    "require": {
+        "php": "^8.3",
+        "filament/filament": "^4.0",
+        "illuminate/contracts": "^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "HenryOnSoftware\\FilamentPanelSwitcher\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "HenryOnSoftware\\FilamentPanelSwitcher\\FilamentPanelSwitcherServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
