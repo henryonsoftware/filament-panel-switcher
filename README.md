@@ -68,7 +68,7 @@ php artisan vendor:publish --tag=filament-panel-switcher-css
 This copies `panel-switcher.css` to `resources/css/filament-panel-switcher.css`. Add an import to your theme CSS file:
 
 ```css
-@import '../filament-panel-switcher.css';
+@import '../../filament-panel-switcher.css';
 ```
 
 The stylesheet uses `@apply` directives (Tailwind CSS) and three CSS custom variables. Define these in your theme to match your design:
