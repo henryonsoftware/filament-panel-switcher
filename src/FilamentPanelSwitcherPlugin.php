@@ -51,13 +51,11 @@ class FilamentPanelSwitcherPlugin implements Plugin
         FilamentView::registerRenderHook(
             PanelsRenderHook::TOPBAR_LOGO_AFTER,
             fn (): string => view('filament-panel-switcher::panel-switcher', ['panels' => $resolvePanels()])->render(),
-            scopes: $panel->getId(),
         );
 
         FilamentView::registerRenderHook(
             PanelsRenderHook::TOPBAR_START,
             fn (): string => view('filament-panel-switcher::panel-switcher-mobile', ['panels' => $resolvePanels()])->render(),
-            scopes: $panel->getId(),
         );
     }
 }
