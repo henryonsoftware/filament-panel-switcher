@@ -4,9 +4,9 @@
     "keywords": ["laravel", "filament", "panel-switcher"],
     "license": "MIT",
     "require": {
-        "php": "^8.3",
-        "filament/filament": "^4.0",
-        "illuminate/contracts": "^12.0"
+        "php": "^8.2",
+        "filament/filament": "^4.0 || ^5.0",
+        "illuminate/contracts": "^11.28 || ^12.0"
     },
     "autoload": {
         "psr-4": {
