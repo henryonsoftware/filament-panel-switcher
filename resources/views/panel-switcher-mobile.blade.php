@@ -14,9 +14,9 @@
                     class="fi-panel-switcher-mobile-trigger"
                 >
                     @if ($activePanel['icon'])
-                        @svg($activePanel['icon'], 'size-5 shrink-0')
+                        @svg($activePanel['icon'], 'fi-panel-switcher-icon-mobile')
                     @else
-                        @svg('heroicon-o-squares-2x2', 'size-5 shrink-0')
+                        @svg('heroicon-o-squares-2x2', 'fi-panel-switcher-icon-mobile')
                     @endif
                 </button>
             </x-slot>

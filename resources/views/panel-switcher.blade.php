@@ -7,7 +7,7 @@
                 @if ($panel['is_active']) aria-current="page" @endif
             >
                 @if ($panel['icon'])
-                    @svg($panel['icon'], 'size-4 shrink-0')
+                    @svg($panel['icon'], 'fi-panel-switcher-icon')
                 @endif
                 <span>{{ $panel['label'] }}</span>
             </a>
