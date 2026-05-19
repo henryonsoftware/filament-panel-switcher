@@ -22,17 +22,7 @@
 }
 
 .fi-panel-switcher-mobile {
-    @apply lg:hidden;
-}
-
-.fi-panel-switcher-mobile-trigger {
-    @apply flex size-10 items-center justify-center rounded-lg outline-none transition-colors;
-    color: oklch(0.552 0.016 285.938);
-}
-
-.fi-panel-switcher-mobile-trigger:hover {
-    background-color: oklch(0.967 0.001 286.375);
-    color: oklch(0.21 0.006 285.885);
+    @apply lg:hidden mr-1;
 }
 
 .fi-panel-switcher-icon {

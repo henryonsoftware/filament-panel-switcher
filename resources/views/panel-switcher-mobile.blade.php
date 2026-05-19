@@ -10,9 +10,7 @@
             <x-slot name="trigger">
                 <button
                     type="button"
-                    aria-label="Switch panel ({{ $activePanel['label'] }})"
-                    class="fi-panel-switcher-mobile-trigger"
-                >
+                    aria-label="Switch panel ({{ $activePanel['label'] }})">
                     @if ($activePanel['icon'])
                         @svg($activePanel['icon'], 'fi-panel-switcher-icon-mobile')
                     @else
