@@ -66,21 +66,21 @@ This will help compile the plugin CSS file to your theme.
 
 ## Custom Styling
 
-If you want to custom the CSS file, publish the CSS file:
+If you want to custom the CSS file, first publish the CSS file:
+
+This copies `panel-switcher.css` to `resources/css/filament-panel-switcher.css`.
 
 ```bash
 php artisan vendor:publish --tag=filament-panel-switcher-css
 ```
 
-This copies `panel-switcher.css` to `resources/css/filament-panel-switcher.css`.
-
-and include it in your theme CSS file
+and then replace the import above with new file path in your theme file
 
 ```css
 @import '../../../../resources/css/filament-panel-switcher.css';
 ```
 
-## Customising Views
+## Custom Views
 
 Publish the views to override the markup:
 
