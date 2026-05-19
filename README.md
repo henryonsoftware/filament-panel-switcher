@@ -64,6 +64,8 @@ Keys are your panel IDs (set via `->id('...')` in the panel provider). Both `lab
 ```
 This will help compile the plugin CSS file to your theme.
 
+**Note:** if you never create a theme before, please look at [this](https://filamentphp.com/docs/5.x/styling/overview#creating-a-custom-theme)
+
 ## Custom Styling
 
 If you want to custom the CSS file, first publish the CSS file:
