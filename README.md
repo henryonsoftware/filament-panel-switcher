@@ -25,7 +25,7 @@ php artisan vendor:publish --tag=filament-panel-switcher-config
 
 ## Usage
 
-Register the plugin in each panel provider where the switcher should appear:
+1. Register the plugin in each panel provider where the switcher should appear:
 
 ```php
 use HenryOnSoftware\FilamentPanelSwitcher\FilamentPanelSwitcherPlugin;
@@ -38,7 +38,7 @@ public function panel(Panel $panel): Panel
 }
 ```
 
-Add your panels to `config/filament-panel-switcher.php`:
+2. Add your panels to `config/filament-panel-switcher.php`:
 
 ```php
 return [
@@ -57,28 +57,27 @@ return [
 
 Keys are your panel IDs (set via `->id('...')` in the panel provider). Both `label` and `icon` are optional — the label defaults to the title-cased panel ID, and the icon is omitted if not set.
 
-## Styling
+3. Add an import to your theme CSS file:
 
-Publish the CSS file and include it in your Filament theme:
+```css
+@import '../../../../vendor/henryonsoftware/filament-panel-switcher/resources/css/panel-switcher.css';
+```
+This will help compile the plugin CSS file to your theme.
+
+## Custom Styling
+
+If you want to custom the CSS file, publish the CSS file:
 
 ```bash
 php artisan vendor:publish --tag=filament-panel-switcher-css
 ```
 
-This copies `panel-switcher.css` to `resources/css/filament-panel-switcher.css`. Add an import to your theme CSS file:
+This copies `panel-switcher.css` to `resources/css/filament-panel-switcher.css`.
+
+and include it in your theme CSS file
 
 ```css
-@import '../../filament-panel-switcher.css';
-```
-
-The stylesheet uses `@apply` directives (Tailwind CSS) and three CSS custom variables. Define these in your theme to match your design:
-
-```css
-:root {
-    --switcher-muted-foreground: oklch(0.552 0.016 285.938);
-    --switcher-accent: oklch(0.967 0.001 286.375);
-    --switcher-accent-foreground: oklch(0.21 0.006 285.885);
-}
+@import '../../../../resources/css/filament-panel-switcher.css';
 ```
 
 ## Customising Views
